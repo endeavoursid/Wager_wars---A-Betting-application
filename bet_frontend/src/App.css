@@ -1,0 +1,42 @@
+.tbl {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(82, 140, 247, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.lose {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(239, 20, 45, 0.75);
+  border-radius: 12px;
+  
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.win {
+    backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(14, 193, 47, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.active::before{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  transition: all 1s;
+}
+.nav_link{
+  position: relative;
+}
+
